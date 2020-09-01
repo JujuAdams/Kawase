@@ -1,0 +1,1 @@
+kawase_destroy(kawase);

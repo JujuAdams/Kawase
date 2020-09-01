@@ -1,0 +1,1 @@
+kawase = kawase_create(1280, 720, 4);
