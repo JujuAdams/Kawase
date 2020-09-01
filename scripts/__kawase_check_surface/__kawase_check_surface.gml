@@ -25,8 +25,8 @@ if (_new_surface)
 {
     var _texture = surface_get_texture(_surface);
     _array[@ 2] = _surface;
-    _array[@ 3] = texture_get_texel_width(_texture);
-    _array[@ 4] = texture_get_texel_height(_texture);
+    _array[@ 3] = 0.5*texture_get_texel_width(_texture);
+    _array[@ 4] = 0.5*texture_get_texel_height(_texture);
 }
 
 return _surface;
