@@ -10,3 +10,4 @@
 
 &nbsp;
 
+For Gaussian or sigmoid blur, please see [my other blur repo](https://github.com/JujuAdams/blurs).
