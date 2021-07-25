@@ -12,7 +12,8 @@
         "7a98a3ee-6373-4781-944b-7f13abe28c0a",
         "6747987d-e44b-4aee-bfa7-e6b976346939",
         "7a7235c6-c78d-4987-b267-29f4ac921ca1",
-        "70cdcf9d-0543-4201-a652-db7f2fb82f36"
+        "70cdcf9d-0543-4201-a652-db7f2fb82f36",
+        "0fba3a4a-13bb-4cc6-b85e-b028b78df637"
     ],
     "filterType": "GMScript",
     "folderName": "Kawase",

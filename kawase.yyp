@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0fba3a4a-13bb-4cc6-b85e-b028b78df637",
+            "Value": {
+                "id": "84cc3e7c-b609-4e2e-94ec-9d616401161e",
+                "resourcePath": "scripts\\kawase_clear\\kawase_clear.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1ab2772c-a5c5-48f9-a38b-3737567f68b0",
             "Value": {
                 "id": "24d36bec-6387-422b-83b6-2712fec9a7e9",
@@ -392,7 +400,8 @@
         "7a98a3ee-6373-4781-944b-7f13abe28c0a",
         "6747987d-e44b-4aee-bfa7-e6b976346939",
         "7a7235c6-c78d-4987-b267-29f4ac921ca1",
-        "70cdcf9d-0543-4201-a652-db7f2fb82f36"
+        "70cdcf9d-0543-4201-a652-db7f2fb82f36",
+        "0fba3a4a-13bb-4cc6-b85e-b028b78df637"
     ],
     "tutorial": ""
 }
