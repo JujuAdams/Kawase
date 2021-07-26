@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Kawase",
-    "path": "folders/Scripts/Kawase.yy",
+    "path": "folders/Kawase.yy",
   },
   "resourceVersion": "1.0",
   "name": "kawase_draw_debug",
