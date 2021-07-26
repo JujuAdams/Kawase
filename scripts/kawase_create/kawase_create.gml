@@ -1,12 +1,9 @@
 /// @param width
 /// @param height
 /// @param maxIterations
-function kawase_create(argument0, argument1, argument2) {
 
-	var _width      = argument0;
-	var _height     = argument1;
-	var _iterations = argument2;
-
+function kawase_create(_width, _height, _iterations)
+{
 	global.__kawase_down_texel_uniform = shader_get_uniform(shd_kawase_down, "u_vTexel");
 	global.__kawase_up_texel_uniform   = shader_get_uniform(shd_kawase_up  , "u_vTexel");
 

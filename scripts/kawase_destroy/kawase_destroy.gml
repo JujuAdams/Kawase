@@ -1,8 +1,7 @@
 /// @param kawaseArray
-function kawase_destroy(argument0) {
 
-	var _root_array = argument0;
-
+function kawase_destroy(_root_array)
+{
 	var _i = 0;
 	repeat(array_length(_root_array))
 	{
@@ -10,6 +9,4 @@ function kawase_destroy(argument0) {
 	    surface_free(_array[2]);
 	    ++_i;
 	}
-
-
 }

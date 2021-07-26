@@ -1,7 +1,8 @@
 /// @param kawaseArray
 /// @param [iterations]
-function kawase_blur() {
 
+function kawase_blur()
+{
 	var _root_array = argument[0];
 	var _iterations = (argument_count > 1)? argument[1] : undefined;
 

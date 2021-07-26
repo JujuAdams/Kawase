@@ -1,8 +1,7 @@
 /// @param iterationArray
-function __kawase_check_surface(argument0) {
 
-	var _array = argument0;
-
+function __kawase_check_surface(_array)
+{
 	var _width   = _array[0];
 	var _height  = _array[1];
 	var _surface = _array[2];
@@ -31,7 +30,4 @@ function __kawase_check_surface(argument0) {
 	}
 
 	return _surface;
-
-
-
 }

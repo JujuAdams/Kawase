@@ -9,9 +9,9 @@
     {"id":{"name":"kawase_get_height","path":"scripts/kawase_get_height/kawase_get_height.yy",},"order":5,},
     {"id":{"name":"kawase_blur","path":"scripts/kawase_blur/kawase_blur.yy",},"order":6,},
     {"id":{"name":"kawase_draw_debug","path":"scripts/kawase_draw_debug/kawase_draw_debug.yy",},"order":7,},
-    {"id":{"name":"__kawase_check_surface","path":"scripts/__kawase_check_surface/__kawase_check_surface.yy",},"order":8,},
-    {"id":{"name":"shd_kawase_down","path":"shaders/shd_kawase_down/shd_kawase_down.yy",},"order":9,},
-    {"id":{"name":"shd_kawase_up","path":"shaders/shd_kawase_up/shd_kawase_up.yy",},"order":10,},
+    {"id":{"name":"__kawase_check_surface","path":"scripts/__kawase_check_surface/__kawase_check_surface.yy",},"order":0,},
+    {"id":{"name":"shd_kawase_down","path":"shaders/shd_kawase_down/shd_kawase_down.yy",},"order":1,},
+    {"id":{"name":"shd_kawase_up","path":"shaders/shd_kawase_up/shd_kawase_up.yy",},"order":2,},
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},"order":2,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":3,},
   ],
@@ -42,6 +42,7 @@
   ],
   "Folders": [
     {"folderPath":"folders/Kawase.yy","order":0,"resourceVersion":"1.0","name":"Kawase","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Kawase/(System).yy","order":11,"resourceVersion":"1.0","name":"(System)","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
