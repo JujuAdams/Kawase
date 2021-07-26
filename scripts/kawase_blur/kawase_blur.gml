@@ -7,11 +7,11 @@ function kawase_blur() {
 
 	if (_iterations == undefined)
 	{
-	    _iterations = array_length_1d(_root_array) - 1;
+	    _iterations = array_length(_root_array) - 1;
 	}
 	else
 	{
-	    _iterations = clamp(_iterations, 0, array_length_1d(_root_array) - 1);
+	    _iterations = clamp(_iterations, 0, array_length(_root_array) - 1);
 	}
 
 	var _i = 0;
