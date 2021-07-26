@@ -21,12 +21,15 @@ function kawase_blur() {
 	    ++_i;
 	}
 
-	var _old_blend_enable = gpu_get_blendenable();
-	var _old_tex_filter   = gpu_get_tex_filter();
-	var _old_shader       = shader_current();
+	var _old_blend_enable   = gpu_get_blendenable();
+	var _old_tex_filter     = gpu_get_tex_filter();
+	var _old_shader         = shader_current();
+    var _old_blendmode_src  = gpu_get_blendmode_src();
+    var _old_blendmode_dest = gpu_get_blendmode_dest();
 
 	gpu_set_blendenable(true);
 	gpu_set_tex_filter(true);
+    gpu_set_blendmode_ext(bm_one, bm_zero);
 	shader_set(shd_kawase_down);
 
 	var _i = 1;
@@ -62,6 +65,5 @@ function kawase_blur() {
 	gpu_set_blendenable(_old_blend_enable);
 	gpu_set_tex_filter(_old_tex_filter);
 	shader_set(_old_shader);
-
-
+    gpu_set_blendmode_ext(_old_blendmode_src, _old_blendmode_dest);
 }
