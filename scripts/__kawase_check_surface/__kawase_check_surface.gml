@@ -31,3 +31,10 @@ function __kawase_check_surface(_array)
 
 	return _surface;
 }
+
+
+
+#macro __KAWASE_VERSION  "1.1.0"
+#macro __KAWASE_DATE     "2021-07-26"
+
+show_debug_message("Kawase: Welcome to Kawase by @jujuadams! This is version " + __KAWASE_VERSION + ", " + __KAWASE_DATE);
