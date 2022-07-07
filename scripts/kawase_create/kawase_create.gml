@@ -24,8 +24,8 @@ function kawase_create(_width, _height, _iterations)
     
 	    __kawase_check_surface(_array);
     
-	    _w = _w/2;
-	    _h = _h/2;
+	    _w = _w div 2;
+	    _h = _h div 2;
 	    ++_i;
 	}
 
