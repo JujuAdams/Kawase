@@ -1,8 +1,6 @@
-<h1 align="center">Kawase 1.1.1</h1>
+<h1 align="center">Kawase 2.0.0</h1>
 
-<p align="center">Kawase dual filter blur for GameMaker Studio 2.3</p>
-
-<p align="center">Chat about Kawase on the <a href="https://discord.gg/8krYCqr">Discord server</a></p>
+<p align="center">Kawase dual filter blur for GameMaker LTS 2022</p>
 
 &nbsp;
 
