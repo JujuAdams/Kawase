@@ -1,1 +1,2 @@
-kawase_destroy(kawase);
+//kawase_destroy(kawase);
+kawase.Destroy();
