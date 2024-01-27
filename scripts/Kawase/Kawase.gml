@@ -104,6 +104,7 @@ function Kawase(_width, _height, _maxIterations) constructor
     {
     	static _shd_kawase_down_vTexel = shader_get_uniform(shdKawaseDown, "u_vTexel");
     	static _shd_kawase_up_vTexel   = shader_get_uniform(shdKawaseUp  , "u_vTexel");
+    	static _identityMatrix = matrix_build_identity();
         
         if (__destroyed) return;
         
@@ -118,13 +119,17 @@ function Kawase(_width, _height, _maxIterations) constructor
 
     	var _oldBlendEnable   = gpu_get_blendenable();
     	var _oldTexFilter     = gpu_get_tex_filter();
-    	var _oldShader         = shader_current();
+    	var _oldTexRepeat     = gpu_get_tex_repeat();
+    	var _oldShader        = shader_current();
         var _oldBlendmodeSrc  = gpu_get_blendmode_src();
         var _oldBlendmodeDest = gpu_get_blendmode_dest();
+    	var _oldMatrixWorld   = matrix_stack_top();
 
     	gpu_set_blendenable(true);
     	gpu_set_tex_filter(true);
+    	gpu_set_tex_repeat(false);
         gpu_set_blendmode_ext(bm_one, bm_zero);
+    	matrix_set(matrix_world,_identityMatrix);
     	shader_set(shdKawaseDown);
 
     	var _i = 1;
@@ -159,8 +164,10 @@ function Kawase(_width, _height, _maxIterations) constructor
 
     	gpu_set_blendenable(_oldBlendEnable);
     	gpu_set_tex_filter(_oldTexFilter);
+    	gpu_set_tex_repeat(_oldTexRepeat);
     	shader_set(_oldShader);
         gpu_set_blendmode_ext(_oldBlendmodeSrc, _oldBlendmodeDest);
+    	matrix_set(matrix_world,_oldMatrixWorld);
     }
     
     static __CheckSurface = function(_struct)
