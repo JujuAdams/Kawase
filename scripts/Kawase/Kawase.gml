@@ -17,8 +17,8 @@
 /// @param height
 /// @param maxIterations
 
-#macro __KAWASE_VERSION  "1.1.1"
-#macro __KAWASE_DATE     "2023-11-02"
+#macro __KAWASE_VERSION  "2.0.1"
+#macro __KAWASE_DATE     "2024-01-28"
 
 show_debug_message("Kawase: Welcome to Kawase by Juju Adams! This is version " + __KAWASE_VERSION + ", " + __KAWASE_DATE);
 

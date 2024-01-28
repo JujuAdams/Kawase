@@ -1,4 +1,4 @@
-<h1 align="center">Kawase 2.0.0</h1>
+<h1 align="center">Kawase 2.0.1</h1>
 
 <p align="center">Kawase dual filter blur for GameMaker LTS 2022</p>
 
