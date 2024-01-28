@@ -123,13 +123,13 @@ function Kawase(_width, _height, _maxIterations) constructor
     	var _oldShader        = shader_current();
         var _oldBlendmodeSrc  = gpu_get_blendmode_src();
         var _oldBlendmodeDest = gpu_get_blendmode_dest();
-    	var _oldMatrixWorld   = matrix_stack_top();
+    	var _oldMatrixWorld   = matrix_get(matrix_world);
 
     	gpu_set_blendenable(true);
     	gpu_set_tex_filter(true);
     	gpu_set_tex_repeat(false);
         gpu_set_blendmode_ext(bm_one, bm_zero);
-    	matrix_set(matrix_world,_identityMatrix);
+    	matrix_set(matrix_world, _identityMatrix);
     	shader_set(shdKawaseDown);
 
     	var _i = 1;
@@ -167,7 +167,7 @@ function Kawase(_width, _height, _maxIterations) constructor
     	gpu_set_tex_repeat(_oldTexRepeat);
     	shader_set(_oldShader);
         gpu_set_blendmode_ext(_oldBlendmodeSrc, _oldBlendmodeDest);
-    	matrix_set(matrix_world,_oldMatrixWorld);
+    	matrix_set(matrix_world, _oldMatrixWorld);
     }
     
     static __CheckSurface = function(_struct)
